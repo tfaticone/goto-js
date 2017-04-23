@@ -6,6 +6,14 @@ the user to have a scroll or goTo functionality with a smoothing
 algorithm. The smoothing algorithm can either be linear or a sine-like
 smoothing function, similar to that of fadeInfadeOut found in CSS.
 
+##Installation
+
+The easiest method of installation would be to use npm.
+```npm install goto-js```
+
+Otherwise, feel free to do a git clone
+```git clone https://github.com/tfaticone/goto-js.git```
+
 ## How to Use
 goto-js only has one entry point, the function goTo. In order to use goTo there are only a few basic pieces of information required: the final x and y position and the duration of the transition. There are a set of optional inputs that add some customization to the needs of the user. For example, initial start position, smoothing algorithm, total number of steps, and element are all optional.
 

@@ -2,7 +2,7 @@
  * Created by thomas on 4/23/17.
  */
 /**
- * Description: goTo.js is a minimalistic library that enables
+ * Description: goto-js is a minimalistic library that enables
  * a fade-in-fade-out or linear transition from one x,y coordinate
  * to another via javascript without the need for css.
  *
