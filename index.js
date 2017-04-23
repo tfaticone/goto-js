@@ -2,7 +2,7 @@
  * Created by thomas on 4/23/17.
  */
 /**
- * Description: Scrolly.js is a minimalistic library that enables
+ * Description: goTo.js is a minimalistic library that enables
  * a fade-in-fade-out or linear transition from one x,y coordinate
  * to another via javascript without the need for css.
  *
@@ -92,7 +92,7 @@ function setTimer(xi, xf, yi, yf, time, totalSteps, algorithm){
 }
 
 /**
- * The entry point for scrolly. Sets the defaults (if not provided) and
+ * The entry point for goTo. Sets the defaults (if not provided) and
  * and calls the function to set the timer.
  *
  * @param xf Finishing x-coordinate
