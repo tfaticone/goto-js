@@ -114,7 +114,7 @@ function goTo(xf, yf, time, options = {}) {
     options.smooth = (!options.smooth) ? 'fadeInfadeOut' : options.smooth;
     options.xi = (!options.xi) ? this.getScrollPosition().x : options.xi;
     options.yi = (!options.yi) ? this.getScrollPosition().y : options.yi;
-    options.totalSteps = (!options.totalSteps) ? (time/1000) * 30 : options.totalSteps;
+    options.totalSteps = (!options.totalSteps) ? (time/1000) * 60 : options.totalSteps;
 
     //Set the coordinates if end point is a defined element
     if(options.element){

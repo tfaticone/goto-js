@@ -2,7 +2,7 @@
 * * *
 ## Description
 goto-js is a minimalistic javascript-based library that enables
-the user to have a scroll or goTo functionality with a smoothing
+the user to have scrolling or goTo functionality with a smoothing
 algorithm. The smoothing algorithm can either be linear or a sine-like
 smoothing function, similar to that of fadeInfadeOut found in CSS.
 
@@ -31,14 +31,14 @@ The **optional** inputs are:
 1. The smoothing algorithm (either fadeInfadeOut or linear, default is fadeInfadeOut)
 2. Initial x-coordinate (Default is current x position)
 3. Initial y-coordinate (Default is current y position)
-4. Total Number of 'steps' (increments, default is 30fps * time [in seconds])
+4. Total Number of 'steps' (increments, default is 60fps * time [in seconds])
 5. A DOM element to act as the final location (this will override the final x and y coordinate)
 
 
 With these in mind the basic format is:
 ```
-var goto-js = require('goto-js);
-goto-js.goTo(xf, yf, time, {
+var gotojs = require('goto-js');
+gotojs.goTo(xf, yf, time, {
     smooth,
     xi,
     yi,
@@ -49,16 +49,16 @@ goto-js.goTo(xf, yf, time, {
 
 #### Examples
 Assuming that
-```var goto-js = require('goto-js);```
+```var gotojs = require('goto-js');```
 
 ##### Example 1
 In order to go to **(50,100)** from the current position in **2 seconds**, the call would be as follows:
-```goto-js.goTo(50, 100, 2000);```
+```gotojs.goTo(50, 100, 2000);```
 
 ##### Example 2
 In order to go from **(25,50)** to **(300,10)** with the duration of the transition being **4 seconds**, the function call would be
 ```
-goto-js.goTo(300, 10, 4000,{
+gotojs.goTo(300, 10, 4000,{
     xi = 25,
     yi = 50
 });
@@ -67,7 +67,7 @@ goto-js.goTo(300, 10, 4000,{
 ##### Example 3
 In order to go from **(25,50)** to **(300,10)** with the duration of the transition being **4 seconds** within **100 steps**, the function call would be
 ```
-goto-js.goTo(300, 10, 4000,{
+gotojs.goTo(300, 10, 4000,{
     xi = 25,
     yi = 50,
     totalSteps = 100
@@ -77,7 +77,7 @@ goto-js.goTo(300, 10, 4000,{
 ##### Example 4
 In order to go from **(25,50)** to **(300,10)** with the duration of the transition being **4 seconds** using the **linear algorithm**, the function call would be
 ```
-goto-js.goTo(300, 10, 4000,{
+gotojs.goTo(300, 10, 4000,{
     xi = 25,
     yi = 50,
     smooth = 'linear'
@@ -88,7 +88,7 @@ goto-js.goTo(300, 10, 4000,{
 In order to go from **(25,50)** to **element button** with the duration of the transition being **4 seconds** using the **linear algorithm**, the function call would be
 ```
 var button = document.querySelector('button');
-goto-js.goTo(0, 0, 4000,{
+gotojs.goTo(0, 0, 4000,{
     xi = 25,
     yi = 50,
     element = button
@@ -101,3 +101,5 @@ goto-js.goTo(0, 0, 4000,{
 Thomas Faticoone <tjf4881@rit.edu>
 
 Feel free to email with any suggestions.
+
+**Note** This is in early stages. Lots of developement is still to be done.
